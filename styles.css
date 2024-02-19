@@ -1,0 +1,74 @@
+:root{
+  --background-orange: #FFBB5C;
+  --orange: #FF9B50;
+  --dark-orange: #E25E3E;
+  --red: #C63D2F;
+  --white: #fffff5;
+}
+body {
+  background-color: var(--background-orange);
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+h1 {
+  color: var(--dark-orange);
+  font-size: 40px;
+  margin: 20px auto;
+  transition: all 1.5s ease-in-out;
+}
+h1:hover {
+  transform: scale(150%);
+}
+canvas {
+  border: 4px solid var(--red);
+  border-radius: 8px;
+  background-color: var(--background-orange);
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  width: 100%;
+}
+.btns-updown {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  background-color: var(--dark-orange);
+  color: var(--white);
+  width: 70px;
+  height: 40px;
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin: 8px;
+  border-radius: 8px;
+  border: 2px solid var(--red);
+  cursor: pointer;
+}
+button:hover{
+  background-color: var(--orange);
+}
+.messages {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 460px;
+}
