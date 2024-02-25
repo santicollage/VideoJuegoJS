@@ -13,7 +13,15 @@
   <div class="game-container">
     <h1>LABYRINTH</h1>
 
-    <canvas id="game"></canvas>
+    <div class="main">
+      <canvas id="game"></canvas>
+      <div class="messages">
+        <p>Vidas: <span id="lives"></span></p>
+        <p>Tiempo: ⌛ <span id="time"></span></p>
+        <p>Record: 🏆 <span id="record"></span></p>
+        <p id="result"></p>
+      </div>
+    </div>
 
     <div class="btns">
       <button id="left">LEFT</button>
@@ -22,10 +30,6 @@
         <button id="down">DOWN</button>
       </div>
       <button id="right">RIGHT</button>
-    </div>
-
-    <div class="messages">
-      <p>Prueba</p>
     </div>
   </div>
 
